@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-
 <html>
+
   <head>
     <title> yoona oh </title>
+    <link href="homepage.css" rel="stylesheet"/>
+    <script src="homepage.js"></script>
   </head>
 
   <body>
-    <h1> Welcome to my site </h1>
-    <p> I'm still under construction but come back soon!
-      I promise I will be beautiful!</p>
+    <h1> hi, i'm yoona </h1>
+
+    <!-- tabs located at the top -->
+    <!-- Citation: https://www.w3schools.com/howto/howto_js_tabs.asp -->
+    <div class="tabs">
+      <button class="tablink" onclick="openTab(event, about)">about</button>
+      <button class="tablink" onclick="openTab(event, portfolio)">portfolio</button>
+      <button class="tablink" onclick="openTab(event, resume)">resume</button>
+    </div>
+
+    <!-- tab content -->
+    <div id="about" class="tabcontent">
+      <h2>about</h2>
+      <p>i'm a sophomore studying computer science and cognitive science at Rice University.
+        i'm interested in learning about artificial intelligence, human-computer interaction,
+        and design. in addition to coding, i love to read manga and webtoons, study U.S. presidents,
+        swim, dance, and sew.</p>
+    </div>
+    <div id="portfolio" class="tabcontent">
+      <h2>portfolio</h2>
+      <p>Coordinating schedules better: Redesigning When2Meet</p>
+      <p></p>
+    </div>
+    <div id="resume" class="tabcontent">
+      <h2>resume</h2>
+      <p></p>
+    </div>
+
   </body>
+
 </html>
