@@ -4,31 +4,28 @@
   <head>
     <title> Yoona Oh </title>
     <link href="homepage.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <script src="homepage.js"></script>
   </head>
 
   <body>
-    <h1> Hi, I'm Yoona. </h1>
-
     <!-- tabs located at the top -->
     <!-- Citation: https://www.w3schools.com/howto/howto_js_tabs.asp -->
     <div class="tabs">
-      <button class="tablink" onclick="openTab(event, About)">About</button>
-      <button class="tablink" onclick="openTab(event, Portfolio)">Portfolio</button>
-      <a href="file:///C:\Users\jyo09\Documents\Rice University\Other\Documents\Resume.pdf"><button class="tablink" onclick="">Resume</button></a>
+      <button class="tablink" onclick="openTab(event, 'About')">About</button>
+      <button class="tablink" onclick="openTab(event, 'Portfolio')">Portfolio</button>
+      <a href="https://drive.google.com/file/d/1KfqrOP-NUNUKdaSLkaJaOOgiYnwbhEVS/view?usp=sharing"><button class="tablink" onclick="">Resume</button></a>
     </div>
 
     <!-- tab content -->
     <div id="About" class="tabcontent">
-      <h2>About</h2>
-      <p>I'm currently a sophomore studying Computer Science and Cognitive Science at Rice University.
-        My interests include artificial intelligence, human-computer interaction, and design. I love
-        building and creating, and when I'm not coding, I love to read manga and webtoons, swim, dance,
-        read about U.S. presidents, and sew.
+      <p>I'm currently a sophomore studying Computer Science and Cognitive Science at Rice University.</br>
+        My interests include artificial intelligence, human-computer interaction, and design. </br>
+        I love building and creating, and when I'm not coding, I love to read manga and webtoons, swim, dance,
+        read about U.S. presidents, and sew. </br>
       </p>
     </div>
     <div id="Portfolio" class="tabcontent">
-      <h2>Portfolio</h2>
       <p>DIY: Redesigned</p>
       <p>When2Meet: Redesigned</p>
       <p>App Map: Navigating the College Admissions Process</p>
@@ -37,6 +34,10 @@
     <div id="Resume" class="tabcontent">
     </div>
 
+    <div id="introduction">
+    <img id="profile" src="C:\Users\jyo09\Downloads\imageedit_2_9579096198.gif" alt="Yoona Oh">
+    <h1> Hi, I'm Yoona. </h1>
+    </div>
   </body>
 
 </html>
