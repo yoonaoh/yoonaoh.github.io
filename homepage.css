@@ -16,8 +16,15 @@ h1 {
   color: white;
 }
 
-p {
+a {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
+  text-decoration: none;
   color: white;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
