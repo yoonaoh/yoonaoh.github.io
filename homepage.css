@@ -1,5 +1,5 @@
 body {
-  background-color: #d6e4f0;
+  background-color: #272739;
 }
 
 .tabs {
@@ -42,8 +42,15 @@ body {
 
 }
 
-h1, h2, p {
-  font-family: 'Nanum Gothic', sans-serif;
+h1 {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 48px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
