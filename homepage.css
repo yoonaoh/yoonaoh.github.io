@@ -35,3 +35,26 @@ p {
   font-size: 24px;
   color: white;
 }
+
+div {
+  color: white;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+#blurb {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+i {
+  color: white;
+  padding-right: 20px;
+}
