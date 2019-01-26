@@ -1,9 +1,19 @@
-function toggleView(idName){
-  var tab = document.getElementById(idName);
-  if (tab.style.display === "none") {
-    tab.style.display = "block";
+function tabView(tabName){
+
+  var i, tabs, activeTab;
+
+  tabs = document.getElementsByClassName("tabcontent");
+  activeTab = document.getElementById(tabName);
+
+  if (activeTab.style.display === "none") {
+    activeTab.style.display = "block";
+    for (i = 0; i < tabs.length; i++) {
+      if (tabs[i] != activeTab) {
+        tabs[i].style.display = "none";
+      }
+    }
   } else {
-    tab.style.display = "none";
+    activeTab.style.display = "none";
   }
 }
 

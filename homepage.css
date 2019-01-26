@@ -42,16 +42,23 @@ div {
   line-height: 20px;
 }
 
+.tab {
+  cursor: pointer;
+}
+
+.tabcontent {
+  display: none;
+}
+
 #blurb {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   font-size: 16px;
   color: white;
-  display: none;
 }
 
 #contact {
-  display: none;
+  color: white;
 }
 
 i {
