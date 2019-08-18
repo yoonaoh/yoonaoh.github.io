@@ -1,0 +1,119 @@
+/* Reference: https://stackoverflow.com/questions/7049875/
+why-doesnt-height-100-work-to-expand-divs-to-the-screen-height */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+#introduction {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Full-page background image */
+  /* Reference: https://www.w3schools.com/howto/howto_css_full_page.asp */
+  background-image: url(file:///C:/Users/jyo09/Documents/Hobbies/Projects/yoonaoh.github.io/images/landing_background.png);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#introduction h1 {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 52px;
+  color: white;
+  line-height: 20px;
+}
+
+#introduction a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#about {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #9c8698;
+}
+
+#about h2 {
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left: 160px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30pt;
+  /* top: 10px;
+  left: 30px; */
+}
+
+#blurb {
+  height: 300px;
+  width: 600px;
+  margin: 0px;
+  padding: 40px;
+  position: absolute;
+  right: 100px;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+}
+
+#contact {
+  position: absolute;
+  left: 100px;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: white;
+}
+
+#contact img {
+  height: 200px;
+  width: 200px
+}
+
+#contact a {
+  color: white;
+}
+
+#contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#portfolio {
+  height: 100%;
+  width: 100%;
+  background-color: #67556e;
+}
+
+#portfolio h2 {
+  margin: 0px;
+  padding: 50px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30pt;
+  text-align: center;
+}
+
+/* #activities {
+  height: 100%;
+  width: 100%;
+  background-color: #c195a3;
+} */

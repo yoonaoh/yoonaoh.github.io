@@ -1,2 +1,3 @@
-# yoonaoh.github.io
-A personal website
+# Yoona Oh
+
+This is my personal website that houses my bio, portfolio, and resume.
