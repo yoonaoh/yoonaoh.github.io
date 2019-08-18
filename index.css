@@ -17,7 +17,7 @@ body, html {
   text-align: center;
   /* Full-page background image */
   /* Reference: https://www.w3schools.com/howto/howto_css_full_page.asp */
-  background-image: url(file:///C:/Users/jyo09/Documents/Hobbies/Projects/yoonaoh.github.io/images/landing_background.png);
+  background-image: url(images/landing_background.png);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -55,8 +55,6 @@ body, html {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30pt;
-  /* top: 10px;
-  left: 30px; */
 }
 
 #blurb {
@@ -70,6 +68,7 @@ body, html {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14pt;
+  font-weight: bold;
 }
 
 #contact {
