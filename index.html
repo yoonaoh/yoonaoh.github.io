@@ -4,9 +4,12 @@
 <head>
   <title> Yoona Oh </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:300|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
   integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link href="index.css" rel="stylesheet"/>
   <script src="index.js"></script>
 </head>
@@ -14,146 +17,245 @@
 <body>
 
   <section id="introduction">
-    <div>
-      <h1> Hi, I'm Yoona </h1>
+    <div id="topnav">
+      <a href="#about"> ABOUT </a>
+      <a href="#portfolio"> PORTFOLIO </a>
+      <a href="#activities"> ACTIVITIES </a>
+      <a href="Yoona_Oh_Resume.pdf"> RESUME </a>
     </div>
     <div>
-      <a href="#about"> About </a>
-      <a href="#portfolio"> Portfolio </a>
-      <a href="#activities"> Activities </a>
-      <a href="Yoona_Oh_Resume.pdf"> Resume </a>
+      <h1> Hi, I'm Yoona </h1>
+      <h2> DESIGNER, &nbsp; DEVELOPER, &nbsp; RESEARCHER </h2>
     </div>
   </section>
 
+  <button onclick="scrollToTop()" id="topbtn"><img src="images/top.png"></img></button>
+
   <section id="about">
-    <h2> About </h2>
+    <h2> ABOUT </h2>
     <p id="blurb">
       Thanks for stopping by! My name is Yoona Oh, and I'm a junior at Rice studying
       Computer Science and Cognitive Science.
-      <br><br>
+
       I like learning about people, and I like building and playing with technology.
       I am looking for opportunities that will let me do both.
-      <br><br>
-      My ultimate goal is to create meaningful experiences for people, whether it be in
-      education, social interaction, or everyday life. I want to make things that will
+
+      My ultimate goal is to create meaningful experiences for people. I want to make things that will
       highlight and celebrate the beauty of being human and our connections to each other.
-      <br><br>
+
       When I'm not coding or designing experiences, I twirl baton(s), dance, swim,
       craft, read webtoons, and consume matcha lattes and bubble tea.
     </p>
 
     <div id="contact">
-      <img src="images/circle-cropped.png"></img>
       <p> Let's get to know each other! </p>
       <div id="contact-buttons">
-        <a href="mailto:j.oh@rice.edu"><i class="fas fa-envelope-square fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/jung-yun-oh/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/yoonaoh" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+        <a href="mailto:j.oh@rice.edu" title="email"><i class="fas fa-envelope-square fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/jung-yun-oh/" target="_blank" title="linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/yoonaoh" target="_blank" title="github"><i class="fab fa-github-square fa-2x"></i></a>
       </div>
     </div>
   </section>
 
   <section id="portfolio">
-    <h2> Recent Projects </h2>
-    <span id="personal-site"></span>
-    <span id="memoir"></span>
-    <span id="ar-asl"></span>
-    <span id="pretty-pictures"></span>
-    <span id="when2meet"></span>
-    <span id="appmap"></span>
+    <h2 id="portfolio-title"> RECENT PROJECTS </h2>
+    <div id="portfolio-content" class="grid-container">
+      <span id="ar-asl" class="grid-item" onclick="displayOverlay()"> AR ASL Lamp
+        <div id="ar-asl-overlay" class="overlay">
+          <button class="closebtn" onclick="closeProject()">&times;</button>
+          <div id="ar-asl-content">
+            <h1> AR ASL Lamp </h1>
+            <p> 05/28/19 - 07/29/19 </p>
+            <h2> Motivation </h2>
+              <p>
+                Language exposure during infancy is important for healthy social, emotional, and cognitive <br>
+                development. However, deaf children of hearing parents often don't get this exposure due to <br>
+                a mismatch in communication modalities between the parent, who primarily uses spoken language,<br>
+                and the child, who doesn't have access to that language.
+              </p>
+            <h2> Process </h2>
+              <p>
+                Hardware: Portable projector, desk device clamp, laptop computer hosting interface <br>
+                Software: JavaScript, HTML, CSS, Semantic UI, YouTube API
+              </p>
+            <h2> Product </h2>
+              <button onclick="enlargeImage()"><img src="images/arasl.jpg"></img></button>
+              <button onclick="enlargeImage()"><img src="images/arasl2.jpg"></img></button>
+              <button onclick="enlargeImage()"><img src="images/poster.png"></img></button>
+          </div>
+        </div>
+      </span>
+      <span id="personal-site" class="grid-item" onclick="displayOverlay()"> Personal Site
+        <div id="personal-site-overlay" class="overlay">
+          <button class="closebtn" onclick="closeProject()">&times;</button>
+          <div id="personal-site-content">
+            <h1> My Website </h1>
+            <p> 01/02/19 - present </p>
+            <h2> Motivation </h2>
+              <p> A place to showcase my work and help people get to know me </p>
+            <h2> Process </h2>
+              <p>
+                Front-end: HTML, CSS, JS <br>
+                Back-end: GitHub pages <br>
+                And a big thank you to W3Schools, Stack OverFlow, Canva, and Google <br>
+                because wow this has been a very long project.
+              </p>
+            <h2> Product </h2>
+              <p> Feel free to browse around! </p>
+          </div>
+        </div>
+      </span>
+      <span id="memoir" class="grid-item" onclick="displayOverlay()"> A Daily Memoir
+        <div id="memoir-overlay" class="overlay">
+          <button class="closebtn" onclick="closeProject()">&times;</button>
+          <div id="memoir-content">
+            <h1> A Daily Memoir </h1>
+            <p> 7/23/19 - 8/22/19 </p>
+            <h2> Motivation </h2>
+              <p>
+                I like to journal every day, and I like using a computer to do so. <br>
+                I wanted to make a web-based journaling application that can remind people <br>
+                to journal daily because it leads to better writing skills, mental health, <br>
+                and productivity. Plus, it's great to look back on little moments throughout <br>
+                your life.
+              </p>
+            <h2> Process </h2>
+              <p>
+                Front-end: HTML, CSS, JS, Semantic UI <br>
+                Back-end: Python, Jinja, Google App Engine
+              </p>
+            <h2> Product </h2>
+            <a href="http://adailymemoir.appspot.com/" target="_blank"><img src="images/memoir.png"></img></a>
+          </div>
+        </div>
+      </span>
+      <span id="pretty-pictures" class="grid-item" onclick="displayOverlay()"> Pretty Pictures
+        <div id="pretty-pictures-overlay" class="overlay">
+          <button class="closebtn" onclick="closeProject()">&times;</button>
+          <div id="pretty-pictures-content">
+            <h1> Pretty Pictures </h1>
+            <p> November 2018 </p>
+            <h2> Motivation </h2>
+              <p> Final project for Intro to Program Design course (COMP 215) <br>
+                Implemented a genetic algorithm and deployed a web microservice for <br>
+                generating pretty, as defined by the user, computer graphics and images using Java
+              </p>
+            <h2> Process </h2>
+              <p>
+                Each computer graphic was generated through a series of arithmetic operations on rgb color <br>
+                values and external image files, which were then formatted into JSON for parsing and reading. <br>
+                Through ApacheSpark and JavaScript, the user is given an interface that allows them to choose <br>
+                2 or more default images for crossbreeding and mutation, thus producing prettier children images <br>
+                with each generation.
+              </p>
+            <h2> Product </h2>
+              <p> The interface and some pretty pictures I was able to make with it.</p>
+              <button onclick="enlargeImage()"><img src="images/pp0.png"></img></button>
+              <button onclick="enlargeImage()"><img src="images/pp1.png"></img></button>
+              <button onclick="enlargeImage()"><img src="images/pp2.png"></img></button>
+              <button onclick="enlargeImage()"><img src="images/pp3.png"></img></button>
+          </div>
+        </div>
+      </span>
+      <span id="when2meet" class="grid-item" onclick="displayOverlay()"> When2Meet Redesign
+        <div id="when2meet-overlay" class="overlay">
+          <button class="closebtn" onclick="closeProject()">&times;</button>
+          <div id="when2meet-content">
+            <h1> When2Meet: Redesigned </h1>
+            <p> 9/14/18 - 9/16/18 </p>
+            <h2> Motivation </h2>
+              <p>
+                HackRice 8.0 had a Design Track that challenged hackers to redesign the UI of an application.<br>
+                My teammates, Esther Plants and Varsha Veer, and I decided to redesign the scheduling tool When2Meet.<br>
+                When2Meet is a popular schedule coordination tool with Rice organizations; however, its unintuitive, <br>
+                clunky interface makes first-time users frustrated. So, we set out to develop a cleaner, simpler interface <br>
+                with some additional features that could make When2Meet more appealing.
+              </p>
+            <h2> Process </h2>
+              <p>
+                I acted as team lead since my teammates did not have extensive experience in web development. We brainstormed <br>
+                and designed together, and my main role in development was creating the personal and group availability pages.
+                Front-end: HTML, CSS, JS
+                Back-end: Python, Google App Engine
+              </p>
+            <h2> Product </h2>
+              <p></p>
+              <a href="https://when2meet-hackrice.appspot.com/" target="_blank"><img src="images/when2meet.png"></img></a>
+          </div>
+        </div>
+      </span>
+      <span id="appmap" class="grid-item" onclick="displayOverlay()"> App Map
+        <div id="appmap-overlay" class="overlay">
+          <button class="closebtn" onclick="closeProject()">&times;</button>
+          <div id="appmap-content">
+            <h1> App Map </h1>
+            <p> 7/24/17 - 7/28/17 </p>
+            <h2> Motivation </h2>
+              <p>
+                Final project for the Google Computer Science Summer Institute. My friends <br>
+                Delali Azamati and Emmanuel Honore developed a website to aid applicants <br>
+                during the college admissions process. We were all members of College Access Programs, <br>
+                so we wanted to provide a resource for low-income and first generation students trying <br>
+                to navigate college applications.
+              </p>
+            <h2> Process </h2>
+              <p>
+                I primarily worked on front-end for the registration, user dashboard, and testing page and back-end.
+                Front-end: HTML, CSS
+                Back-end: Python, Jinja, Google App Engine
+              </p>
+            <h2> Product </h2>
+            <a href="http://appmaptheproject.appspot.com/" target="_blank"><img src="images/appmap.png"></img></a>
+          </div>
+        </div>
+      </span>
+    </div>
   </section>
 
-  <!-- <div id="ar-asl-overlay">
-    <div id="ar-asl-content">
-      <h1> AR ASL Lamp </h1>
-      <p> 05/28/19 - 07/29/19 </p>
-      <h2> Motivation </h2>
-      <p></p>
-      <h2> Process </h2>
-      <p></p>
-      <h2> Product </h2>
-      <p></p>
-    </div>
-  </div>
+  <section id="activities">
+    <h2> ACTIVITIES </h2>
 
-  <div id="personal-site-overlay">
-    <div id="personal-site-content">
-      <h1> This Website </h1>
-      <p> 01/02/19 - present </p>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-    </div>
-  </div>
-
-  <div id="memoir-overlay">
-    <div id="memoir-content">
-      <h1> A Daily Memoir </h1>
-      <p> </p>
-      <h2> </h2>
-      <h2> </h2>
-      <h2> </h2>
-    </div>
-  </div>
-
-  <div id="pretty-pictures-overlay">
-    <div id="pretty-pictures-content">
-      <h1> Pretty Pictures </h1>
-      <p></p>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-    </div>
-  </div>
-
-  <div id="when2meet-overlay">
-    <div id="when2meet-content">
-      <h1> When2Meet: Redesigned </h1>
-      <p></p>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-    </div>
-  </div>
-
-  <div id="appmap-overlay">
-    <div id="appmap-content">
-      <h1> App Map </h1>
-      <p></p>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-    </div>
-  </div> -->
-
-  <!-- <section id="activities">
-
-    <h1> Activities </h1>
-    <div>
-      <h2> Rice QuestBridge Scholars <h2>
+    <div id="RQS">
+      <h3> Rice QuestBridge Scholars (RQS) </h3>
         <p> Aug 2017 - present </p>
 
-        Events Coordinator
-        - list how many events coordinated
-        Mentor Families Program
-        - list how many mentees
-        <h3> Events Coordinator </h3>
-        <ul>
-        </ul>
-        <h3> Mentor Families Program </h3>
+        <h4> Events Coordinator </h4>
+        <p> Aug 2018 - May 2019 </p>
+        <p> Advertised & organized 17 RQS events </p>
+        <h4> Mentor Families Program </h4>
+        <p> Aug 2018 - present </p>
+        <p> Co-mentored 4 freshmen QuestBridge Scholars to help them transition <br><br>
+            into college life, given the challenges that come with being a low-income student<br><br>
+            by providing regular meetings/activities and acting as a resource for academic, <br><br>
+            professional, and personal advice. </p>
     </div>
 
-    CSters
-    - Rice Women in Computing, outreach, social
-    BASYK
-    - KPop/Hip Hop dance crew
-    Rice Apps
-    - Developer
-    Owl Admissions Blogger
-    - Student Admissions Council
-    - 3 blog posts
+    <p> ------------------------------------------- </p>
 
-  </section> -->
+    <div id="CSters">
+      <h3> CSters </h3>
+      <p> Aug 2017 - present </p>
+      <p> Rice Women in Computing </p>
+    </div>
+
+    <p> ------------------------------------------- </p>
+
+    <div id="BASYK">
+      <h3> BASYK </h3>
+      <p> Aug 2017 - present </p>
+      <p> KPop/Hip hop dance crew </p>
+    </div>
+
+    <p> ------------------------------------------- </p>
+
+    <div id="SAC">
+      <h3> Owl Admissions Blogger </h3>
+      <p> Aug 2017 - May 2018 </p>
+      <p> Wrote 3 blog posts on the Owl Admissions website designed to <br><br>
+        introduce prospective students to life at Rice </p>
+    </div>
+
+  </section>
 
 </body>
 
