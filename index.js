@@ -42,9 +42,13 @@ function enlargeImage() {
   var img = event.target;
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalImg.src = img.src;
+  modalImg.style.transform = "scale(4)";
   captionText.innerHTML = img.alt;
+
+  var scrollBtn = document.getElementById("topbtn");
+  scrollBtn.style.display = "none";
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
