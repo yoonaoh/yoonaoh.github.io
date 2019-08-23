@@ -60,31 +60,44 @@
   <section id="portfolio">
     <h2 id="portfolio-title"> RECENT PROJECTS </h2>
     <div id="portfolio-content" class="grid-container">
-      <span id="ar-asl" class="grid-item" onclick="displayOverlay()"> AR ASL Lamp
-        <div id="ar-asl-overlay" class="overlay">
-          <button class="closebtn" onclick="closeProject()">&times;</button>
-          <div id="ar-asl-content">
-            <h1> AR ASL Lamp </h1>
-            <p> 05/28/19 - 07/29/19 </p>
-            <h2> Motivation </h2>
-              <p>
-                Language exposure during infancy is important for healthy social, emotional, and cognitive <br>
-                development. However, deaf children of hearing parents often don't get this exposure due to <br>
-                a mismatch in communication modalities between the parent, who primarily uses spoken language,<br>
-                and the child, who doesn't have access to that language.
-              </p>
-            <h2> Process </h2>
-              <p>
-                Hardware: Portable projector, desk device clamp, laptop computer hosting interface <br>
-                Software: JavaScript, HTML, CSS, Semantic UI, YouTube API
-              </p>
-            <h2> Product </h2>
-              <button onclick="enlargeImage()"><img src="images/arasl.jpg"></button>
-              <button onclick="enlargeImage()"><img src="images/arasl2.jpg"></button>
-              <button onclick="enlargeImage()"><img src="images/poster.png"></button>
-          </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
+      <span id="ar-asl" class="grid-item" onclick="displayOverlay()"> AR ASL Lamp </span>
+      <div id="ar-asl-overlay" class="overlay">
+        <button class="closebtn" onclick="closeProject()">&times;</button>
+        <div id="ar-asl-content">
+          <h1> AR ASL Lamp </h1>
+          <p> 05/28/19 - 07/29/19 </p>
+          <h2> Motivation </h2>
+            <p>
+              Language exposure during infancy is important for healthy social, emotional, and cognitive <br>
+              development. However, deaf children of hearing parents often don't get this exposure due to <br>
+              a mismatch in communication modalities between the parent, who primarily uses spoken language,<br>
+              and the child, who doesn't have access to that language.
+            </p>
+          <h2> Process </h2>
+            <p>
+              Hardware: Portable projector, desk device clamp, laptop computer hosting interface <br>
+              Software: JavaScript, HTML, CSS, Semantic UI, YouTube API
+            </p>
+          <h2> Product </h2>
+            <img onclick="enlargeImage()" src="images/arasl.jpg">
+            <img onclick="enlargeImage()" src="images/arasl2.jpg">
+            <img onclick="enlargeImage()"src="images/poster.png">
         </div>
-      </span>
+      </div>
       <span id="personal-site" class="grid-item" onclick="displayOverlay()"> Personal Site
         <div id="personal-site-overlay" class="overlay">
           <button class="closebtn" onclick="closeProject()">&times;</button>
@@ -150,10 +163,10 @@
               </p>
             <h2> Product </h2>
               <p> The interface and some pretty pictures I was able to make with it.</p>
-              <button onclick="enlargeImage()"><img src="images/pp0.png"></img></button>
-              <button onclick="enlargeImage()"><img src="images/pp1.png"></img></button>
-              <button onclick="enlargeImage()"><img src="images/pp2.png"></img></button>
-              <button onclick="enlargeImage()"><img src="images/pp3.png"></img></button>
+              <img onclick="enlargeImage()" src="images/pp0.png">
+              <img onclick="enlargeImage()" src="images/pp1.png">
+              <img onclick="enlargeImage()" src="images/pp2.png">
+              <img onclick="enlargeImage()" src="images/pp3.png">
           </div>
         </div>
       </span>
@@ -174,7 +187,7 @@
             <h2> Process </h2>
               <p>
                 I acted as team lead since my teammates were mostly new to web development. We brainstormed and <br>
-                designed together, and my main role in development was creating the personal and group <br> 
+                designed together, and my main role in development was creating the personal and group <br>
                 availability pages.<br>
                 Front-end: HTML, CSS, JS <br>
                 Back-end: Python, Google App Engine <br>
@@ -201,8 +214,8 @@
               </p>
             <h2> Process </h2>
               <p>
-                I primarily worked on front-end for the registration, user dashboard, and testing page and back-end.
-                Front-end: HTML, CSS
+                I primarily worked on front-end for the registration, user dashboard, and testing page and back-end. <br>
+                Front-end: HTML, CSS <br>
                 Back-end: Python, Jinja, Google App Engine
               </p>
             <h2> Product </h2>
