@@ -182,7 +182,6 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-bottom: 40px;
   background-color: white; /* Black background with opacity */
 }
 
@@ -201,7 +200,7 @@ body, html {
 .overlay h1 {
   color: #945f4e;
   font-family: 'Assistant', sans-serif;
-  font-size: 28pt;
+  font-size: 22pt;
   text-align: center;
 }
 
@@ -216,15 +215,13 @@ body, html {
   color: #576770;
   font-family: 'Assistant', sans-serif;
   font-size: 12pt;
-  margin: 0px;
+  text-align: center;
 }
 
 #portfolio img {
-  height: 100px;
-  width: 160px;
-  margin: 0px;
+  height: 20%;
+  width: 15%;
   cursor: pointer;
-  padding-bottom: 20px;
 }
 
 #portfolio button {
@@ -240,7 +237,7 @@ body, html {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -258,7 +255,7 @@ body, html {
   margin: auto;
   display: flex;
   max-width: 700px;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 
 /* The Close Button */
@@ -270,6 +267,7 @@ body, html {
   font-size: 36px;
   font-weight: bold;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
